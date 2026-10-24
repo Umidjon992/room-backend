@@ -36,5 +36,5 @@ export const env = {
   ...parsed.data,
   FRONTEND_ORIGINS,
   // Used to build invite links
-  PUBLIC_FRONTEND_URL: FRONTEND_ORIGINS[0],
+  FRONTEND_URL: FRONTEND_ORIGINS[0],
 };

@@ -21,7 +21,7 @@ export async function create(req: Request, res: Response) {
   const { room, hostKey } = await createRoom(name || undefined);
   res.status(201).json({
     success: true,
-    data: { room: toPublicRoom(room), hostKey, link: `${env.PUBLIC_FRONTEND_URL}/room/${room.roomId}` },
+    data: { room: toPublicRoom(room), hostKey, link: `${env.FRONTEND_URL}/room/${room.roomId}` },
   });
 }
 
